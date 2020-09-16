@@ -213,7 +213,8 @@ class CustomCardItemDirective(Directive):
                    'image': directives.unchanged,
                    'link': directives.unchanged,
                    'card_description': directives.unchanged,
-                   'tags': directives.unchanged}
+                   'tags': directives.unchanged,
+                   'level': directives.unchanged}
 
     def run(self):
         try:
@@ -242,6 +243,11 @@ class CustomCardItemDirective(Directive):
             else:
                 tags = ''
 
+            if 'level' in self.options:
+                level = self.options['level']
+            else:
+                level = ''
+
         except FileNotFoundError as e:
             print(e)
             return []
@@ -254,7 +260,8 @@ class CustomCardItemDirective(Directive):
                                         image=image,
                                         link=link,
                                         card_description=card_description,
-                                        tags=tags)
+                                        tags=tags,
+                                        level=level)
         card_list = StringList(card_rst.split('\n'))
         card = nodes.paragraph()
         self.state.nested_parse(card_list, self.content_offset, card)
@@ -264,7 +271,7 @@ class CustomCardItemDirective(Directive):
 CARD_TEMPLATE = """
 .. raw:: html
 
-    <div class="col-md-12 tutorials-card-container" data-tags={tags}>
+    <div class="col-md-12 tutorials-card-container" data-tags={tags} data-level={level}>
 
     <div class="card tutorials-card" link={link}>
 

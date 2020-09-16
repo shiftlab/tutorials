@@ -32,9 +32,18 @@ Welcome to PyTorch Tutorials
     <nav class="navbar navbar-expand-lg navbar-light tutorials-nav col-12">
         <div class="tutorial-tags-container">
             <div id="dropdown-filter-tags">
-                <div class="tutorial-filter-menu">
-                    <div class="tutorial-filter filter-btn all-tag-selected" data-tag="all">All</div>
-                </div>
+               <div class="tutorial-filter-menu">
+                  <div class="tutorial-filter filter-btn all-tag-selected" data-tag="all">All</div>
+               </div>
+               <div class="sort-menu">
+                  <a data-toggle="dropdown" data-target="#dropdownSort">Sort</a>
+
+                  <div class="dropdown-menu sort-menu" id="dropdownSort">
+                     <div class="tutorials-sort-dropdown">
+                        <ul></ul>
+                     </div>
+                  </div>
+               </div>
             </div>
         </div>
     </nav>
@@ -56,6 +65,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/60-min-blitz.png
    :link: beginner/deep_learning_60min_blitz.html
    :tags: Getting-Started
+   :level: beginner
 
 .. customcarditem::
    :header: Learning PyTorch with Examples
@@ -63,6 +73,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/learning-pytorch-with-examples.png
    :link: beginner/pytorch_with_examples.html
    :tags: Getting-Started
+   :level: beginner
 
 .. customcarditem::
    :header: What is torch.nn really?
@@ -70,6 +81,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/torch-nn.png
    :link: beginner/nn_tutorial.html
    :tags: Getting-Started
+   :level: beginner
 
 .. customcarditem::
    :header: Visualizing Models, Data, and Training with Tensorboard
@@ -77,6 +89,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/visualizing-with-tensorboard.png
    :link: intermediate/tensorboard_tutorial.html
    :tags: Interpretability,Getting-Started,Tensorboard
+   :level: beginner
 
 .. Image/Video
 
@@ -86,6 +99,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/TorchVision-Object-Detection-Finetuning-Tutorial.png
    :link: intermediate/torchvision_tutorial.html
    :tags: Image/Video
+   :level: beginner
 
 .. customcarditem::
    :header: Transfer Learning for Computer Vision Tutorial
@@ -93,6 +107,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Transfer-Learning-for-Computer-Vision-Tutorial.png
    :link: beginner/transfer_learning_tutorial.html
    :tags: Image/Video
+   :level: beginner
 
 .. customcarditem::
    :header: Adversarial Example Generation
@@ -100,6 +115,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Adversarial-Example-Generation.png
    :link: beginner/fgsm_tutorial.html
    :tags: Image/Video
+   :level: beginner
 
 .. customcarditem::
    :header: DCGAN Tutorial
@@ -107,6 +123,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/DCGAN-Tutorial.png
    :link: beginner/dcgan_faces_tutorial.html
    :tags: Image/Video
+   :level: beginner
 
 .. Audio
 
@@ -116,6 +133,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/torchaudio-Tutorial.png
    :link: beginner/audio_preprocessing_tutorial.html
    :tags: Audio
+   :level: beginner
 
 .. Text
 
@@ -125,6 +143,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Sequence-to-Sequence-Modeling-with-nnTransformer-andTorchText.png
    :link: beginner/transformer_tutorial.html
    :tags: Text
+   :level: beginner
 
 .. customcarditem::
    :header: NLP from Scratch: Classifying Names with a Character-level RNN
@@ -132,6 +151,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/NLP-From-Scratch-Classifying-Names-with-a-Character-Level-RNN.png
    :link: intermediate/char_rnn_classification_tutorial
    :tags: Text
+   :level: beginner
 
 .. customcarditem::
    :header: NLP from Scratch: Generating Names with a Character-level RNN
@@ -139,6 +159,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/NLP-From-Scratch-Generating-Names-with-a-Character-Level-RNN.png
    :link: intermediate/char_rnn_generation_tutorial.html
    :tags: Text
+   :level: beginner
 
 .. customcarditem::
    :header: NLP from Scratch: Translation with a Sequence-to-sequence Network and Attention
@@ -146,6 +167,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/NLP-From-Scratch-Translation-with-a-Sequence-to-Sequence-Network-and-Attention.png
    :link: intermediate/seq2seq_translation_tutorial.html
    :tags: Text
+   :level: beginner
 
 .. customcarditem::
    :header: Text Classification with Torchtext
@@ -153,6 +175,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Text-Classification-with-TorchText.png
    :link: beginner/text_sentiment_ngrams_tutorial.html
    :tags: Text
+   :level: beginner
 
 .. customcarditem::
    :header: Language Translation with Torchtext
@@ -160,6 +183,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Language-Translation-with-TorchText.png
    :link: beginner/torchtext_translation_tutorial.html
    :tags: Text
+   :level: beginner
 
 .. Reinforcement Learning
 
@@ -169,6 +193,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/cartpole.gif
    :link: intermediate/reinforcement_q_learning.html
    :tags: Reinforcement-Learning
+   :level: beginner
 
 .. Deploying PyTorch Models in Production
 
@@ -178,6 +203,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Deploying-PyTorch-in-Python-via-a-REST-API-with-Flask.png
    :link: intermediate/flask_rest_api_tutorial.html
    :tags: Production
+   :level: beginner
 
 .. customcarditem::
    :header: Introduction to TorchScript
@@ -185,6 +211,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Introduction-to-TorchScript.png
    :link: beginner/Intro_to_TorchScript_tutorial.html
    :tags: Production
+   :level: beginner
 
 .. customcarditem::
    :header: Loading a TorchScript Model in C++
@@ -192,6 +219,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Loading-a-TorchScript-Model-in-Cpp.png
    :link: advanced/cpp_export.html
    :tags: Production
+   :level: beginner
 
 .. customcarditem::
    :header: (optional) Exporting a Model from PyTorch to ONNX and Running it using ONNX Runtime
@@ -199,6 +227,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/optional-Exporting-a-Model-from-PyTorch-to-ONNX-and-Running-it-using-ONNX-Runtime.png
    :link: advanced/super_resolution_with_onnxruntime.html
    :tags: Production
+   :level: beginner
 
 .. Frontend APIs
 
@@ -208,6 +237,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/experimental-Introduction-to-Named-Tensors-in-PyTorch.png
    :link: intermediate/named_tensor_tutorial.html
    :tags: Frontend-APIs,Named-Tensor,Best-Practice
+   :level: beginner
 
 .. customcarditem::
    :header: (beta) Channels Last Memory Format in PyTorch
@@ -215,6 +245,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/experimental-Channels-Last-Memory-Format-in-PyTorch.png
    :link: intermediate/memory_format_tutorial.html
    :tags: Memory-Format,Best-Practice
+   :level: beginner
 
 .. customcarditem::
    :header: Using the PyTorch C++ Frontend
@@ -222,6 +253,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Using-the-PyTorch-Cpp-Frontend.png
    :link: advanced/cpp_frontend.html
    :tags: Frontend-APIs,C++
+   :level: beginner
 
 .. customcarditem::
    :header: Custom C++ and CUDA Extensions
@@ -229,6 +261,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Custom-Cpp-and-CUDA-Extensions.png
    :link: advanced/cpp_extension.html
    :tags: Frontend-APIs,C++,CUDA
+   :level: beginner
 
 .. customcarditem::
    :header: Extending TorchScript with Custom C++ Operators
@@ -236,6 +269,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Extending-TorchScript-with-Custom-Cpp-Operators.png
    :link: advanced/torch_script_custom_ops.html
    :tags: Frontend-APIs,TorchScript,C++
+   :level: beginner
 
 .. customcarditem::
    :header: Extending TorchScript with Custom C++ Classes
@@ -243,6 +277,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Extending-TorchScript-with-Custom-Cpp-Classes.png
    :link: advanced/torch_script_custom_classes.html
    :tags: Frontend-APIs,TorchScript,C++
+   :level: advanced
 
 .. customcarditem::
    :header: Dynamic Parallelism in TorchScript
@@ -250,6 +285,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/TorchScript-Parallelism.jpg
    :link: advanced/torch-script-parallelism.html
    :tags: Frontend-APIs,TorchScript,C++
+   :level: advanced
 
 .. customcarditem::
    :header: Autograd in C++ Frontend
@@ -257,6 +293,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Autograd-in-Cpp-Frontend.png
    :link: advanced/cpp_autograd.html
    :tags: Frontend-APIs,C++
+   :level: advanced
 
 .. Model Optimization
 
@@ -266,6 +303,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/ray-tune.png
    :link: beginner/hyperparameter_tuning_tutorial.html
    :tags: Model-Optimization,Best-Practice
+   :level: advanced
 
 .. customcarditem::
    :header: Pruning Tutorial
@@ -273,6 +311,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Pruning-Tutorial.png
    :link: intermediate/pruning_tutorial.html
    :tags: Model-Optimization,Best-Practice
+   :level: advanced
 
 .. customcarditem::
    :header: (beta) Dynamic Quantization on an LSTM Word Language Model
@@ -280,6 +319,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/experimental-Dynamic-Quantization-on-an-LSTM-Word-Language-Model.png
    :link: advanced/dynamic_quantization_tutorial.html
    :tags: Text,Quantization,Model-Optimization
+   :level: advanced
 
 .. customcarditem::
    :header: (beta) Dynamic Quantization on BERT
@@ -287,6 +327,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/experimental-Dynamic-Quantization-on-BERT.png
    :link: intermediate/dynamic_quantization_bert_tutorial.html
    :tags: Text,Quantization,Model-Optimization
+   :level: advanced
 
 .. customcarditem::
    :header: (beta) Static Quantization with Eager Mode in PyTorch
@@ -294,6 +335,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/experimental-Static-Quantization-with-Eager-Mode-in-PyTorch.png
    :link: advanced/static_quantization_tutorial.html
    :tags: Image/Video,Quantization,Model-Optimization
+   :level: advanced
 
 .. customcarditem::
    :header: (beta) Quantized Transfer Learning for Computer Vision Tutorial
@@ -301,6 +343,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/experimental-Quantized-Transfer-Learning-for-Computer-Vision-Tutorial.png
    :link: advanced/static_quantization_tutorial.html
    :tags: Image/Video,Quantization,Model-Optimization
+   :level: advanced
 
 .. Parallel-and-Distributed-Training
 
@@ -310,6 +353,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/PyTorch-Distributed-Overview.png
    :link: beginner/dist_overview.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Single-Machine Model Parallel Best Practices
@@ -317,6 +361,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Model-Parallel-Best-Practices.png
    :link: intermediate/model_parallel_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Getting Started with Distributed Data Parallel
@@ -324,6 +369,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Getting-Started-with-Distributed-Data-Parallel.png
    :link: intermediate/ddp_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: (advanced) PyTorch 1.0 Distributed Trainer with Amazon AWS
@@ -331,6 +377,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/advanced-PyTorch-1point0-Distributed-Trainer-with-Amazon-AWS.png
    :link: beginner/aws_distributed_training_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Writing Distributed Applications with PyTorch
@@ -338,6 +385,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Writing-Distributed-Applications-with-PyTorch.png
    :link: intermediate/dist_tuto.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Getting Started with Distributed RPC Framework
@@ -345,6 +393,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Getting Started with Distributed-RPC-Framework.png
    :link: intermediate/rpc_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Implementing a Parameter Server Using Distributed RPC Framework
@@ -352,6 +401,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Implementing-a-Parameter-Server-Using-Distributed-RPC-Framework.png
    :link: intermediate/rpc_param_server_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Distributed Pipeline Parallelism Using RPC
@@ -359,6 +409,7 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Distributed-Pipeline-Parallelism-Using-RPC.png
    :link: intermediate/dist_pipeline_parallel_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. customcarditem::
    :header: Implementing Batch RPC Processing Using Asynchronous Executions
@@ -366,13 +417,15 @@ Welcome to PyTorch Tutorials
    :image: _static/img/thumbnails/cropped/Implementing-Batch-RPC-Processing-Using-Asynchronous-Executions.png
    :link: intermediate/rpc_async_execution.html
    :tags: Parallel-and-Distributed-Training
-   
+   :level: advanced
+
 .. customcarditem::
    :header: Combining Distributed DataParallel with Distributed RPC Framework
    :card_description: Walk through a through a simple example of how to combine distributed data parallelism with distributed model parallelism.
    :image: _static/img/thumbnails/cropped/Combining-Distributed-DataParallel-with-Distributed-RPC-Framework.png
    :link: advanced/rpc_ddp_tutorial.html
    :tags: Parallel-and-Distributed-Training
+   :level: advanced
 
 .. End of tutorial card section
 
