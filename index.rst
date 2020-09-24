@@ -33,6 +33,11 @@ Welcome to PyTorch Tutorials
         <div class="tutorial-tags-container">
             <div id="dropdown-filter-tags">
                <div class="tutorial-filter-menu">
+                  <h3 class="tags-header">Tags</h3>
+                  <div class="tutorial-filter filter-btn all-tag-selected" data-tag="all">All</div>
+               </div>
+               <div class="tutorial-level-menu">
+                  <h3 class="tags-header">Levels</h3>
                   <div class="tutorial-filter filter-btn all-tag-selected" data-tag="all">All</div>
                </div>
                <div class="sort-menu">

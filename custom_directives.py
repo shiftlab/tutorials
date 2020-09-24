@@ -283,7 +283,7 @@ CARD_TEMPLATE = """
 
     <p class="card-summary">{card_description}</p>
 
-    <p class="tags">{tags}</p>
+    <p class="tags">{tags} | {level}</p>
 
     <div class="tutorials-image">{image}</div>
 
