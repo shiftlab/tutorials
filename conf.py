@@ -44,7 +44,7 @@ try:
 except ImportError:
     import warnings
     warnings.warn('unable to load "torchvision" package')
-import pytorch_sphinx_theme
+#import pytorch_sphinx_theme
 
 # -- General configuration ------------------------------------------------
 
@@ -174,7 +174,7 @@ html_static_path = ['_static']
 
 
 html_theme = 'pytorch_sphinx_theme'
-html_theme_path = [pytorch_sphinx_theme.get_html_theme_path()]
+html_theme_path = ['../../pytorch_sphinx_theme-1']
 html_logo = '_static/img/pytorch-logo-dark.svg'
 html_theme_options = {
     'pytorch_project': 'tutorials',
